@@ -121,3 +121,43 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Responsive images and media */
+img, video, svg, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive containers */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100vw;
+}
+
+/* Responsive typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+/* Utility for hiding scrollbars on mobile */
+::-webkit-scrollbar {
+  width: 8px;
+}
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}
